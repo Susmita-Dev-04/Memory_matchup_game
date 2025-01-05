@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <!-- #Google Fonts :)-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- #Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-image: url('img/bg.jpg');
+        background-size: cover; 
+        
+    }
+
+      .sliding-quote {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 80%; 
+        margin: 0 auto 20px; 
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.8em; 
+        font-weight: bold; 
+        color: #000; 
+        position: relative;
+      }
+
+      .sliding-quote span {
+        display: inline-block;
+        animation: slide 10s linear infinite; /* Slow speed */
+        position: relative;
+      }
+
+      @keyframes slide {
+        0% {
+          transform: translateX(20%); /* Start within the middle range */
+        }
+        100% {
+          transform: translateX(-20%); /* End within the middle range */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="stats-container">
+        <div id="moves-count"></div>
+        <div id="time"></div>
+      </div>
+      <div class="game-container"></div>
+      <button id="stop" class="hide">Stop Game</button>
+    </div>
+    <div class="controls-container">
+      <div class="sliding-quote">
+        <span>“If memory🧠 was a superpower, mine would need a recharge!⚡🔋🤪”</span>
+      </div>
+      <p id="result"></p>
+      <button id="start">Start Game</button>
+    </div>
+    <!-- #Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
