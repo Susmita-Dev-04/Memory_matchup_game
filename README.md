@@ -8,7 +8,7 @@
 - **Responsive Design:** The game is mobile-friendly and works across all screen sizes.
 - **Timer and Score:** Keep track of your time and score to challenge yourself to beat your best.
 
-## Panel Screen Views
+## Panel Screen Views:
 
 ### Home Page:
 ![home_page](https://github.com/user-attachments/assets/749f25e1-ce40-45d9-ade2-af83424416fb)
